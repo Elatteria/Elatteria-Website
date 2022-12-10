@@ -1,0 +1,24 @@
+section.gamedle-section {
+    background: rgb(42, 42, 42);
+    color: white;
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+section.gamedle-section div {
+    background: rgb(42, 42, 42);
+    color: white;
+    margin: 1%;
+    display: inline-block;
+    width: 10%;
+}
+
+div.gamedle-section {
+    background: rgb(42, 42, 42);
+    color: white;
+    margin: 1%;
+    display: flex;
+    height: 5%;
+    font-size: 40px;
+}
