@@ -20,12 +20,23 @@ body {
 }
 header {
     background-color: rgb(42, 42, 42);
+    background-image: url("Images/TopBarNight.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 2%;
+    text-align: center;
+}
+
+header .logo a{
+    margin: 1%;
     background-image: url("Images/E-CafeIcon.png");
     background-repeat: no-repeat;
-    background-size: 5%;
-    background-position: center;
+    display: inline-block;
     position: relative;
-    padding: 2%;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
 }
 
 ul {
@@ -36,7 +47,7 @@ ul {
 
 li {
     display: inline-block;
-    margin: 0 1% 0 0;
+    margin: 0 7% 0 0;
     font-size: 40px;
 }
 
@@ -45,8 +56,8 @@ button {
     color: white;
     transform: scale(3, 3);
     width: 80px;
-    margin: 7%;
-    text-align: center;
+    margin: 5%;
+    position: absolute;
 }
 
 a {
@@ -63,4 +74,29 @@ iframe.discord {
     display: flex;
     justify-content: left;
     margin-bottom: 0%;
+}
+
+.features img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: gray 0 0 20px;
+}
+
+.features {
+    color: white;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(42, 42, 42);
+    text-align: center;
+    padding: 20px 20px;
+    color: gray;
 }
