@@ -56,8 +56,8 @@ button {
     color: white;
     transform: scale(3, 3);
     width: 80px;
-    margin: 5%;
-    position: absolute;
+    margin: 7%;
+    text-align: center;
 }
 
 a {
@@ -90,13 +90,14 @@ iframe.discord {
     text-align: center;
 }
 
-.center {
-    text-align: center;
-}
-
 footer {
     background-color: rgb(42, 42, 42);
     text-align: center;
     padding: 20px 20px;
     color: gray;
+    margin-top: -50px;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    z-index: 1;
 }

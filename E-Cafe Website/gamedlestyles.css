@@ -7,7 +7,7 @@ section.gamedle-section {
 }
 
 section.gamedle-section div {
-    background: rgb(42, 42, 42);
+    background: rgba(42, 42, 42, 0.75);
     color: white;
     margin: 1%;
     display: inline-block;
@@ -15,7 +15,7 @@ section.gamedle-section div {
 }
 
 div.gamedle-section {
-    background: rgb(42, 42, 42);
+    background: rgba(42, 42, 42, 0.75);
     color: white;
     margin: 1%;
     display: flex;
