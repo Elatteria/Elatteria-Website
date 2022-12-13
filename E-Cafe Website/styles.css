@@ -1,9 +1,9 @@
-h1.title{
+.title{
     font-size: 50px;
     text-align: center;
 }
 
-section.description {
+.description {
     text-align: center;
     font-size: 25px;
 }
@@ -19,24 +19,24 @@ body {
     padding: 0;
 }
 header {
-    background-color: rgb(42, 42, 42);
     background-image: url("Images/TopBarNight.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
+    background-position: top;
     padding: 2%;
     text-align: center;
+    top: 0px;
 }
 
 header .logo a{
-    margin: 1%;
     background-image: url("Images/E-CafeIcon.png");
     background-repeat: no-repeat;
     display: inline-block;
     position: relative;
     background-size: 100%;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    text-indent: -999999999999999999999999999999px;
 }
 
 ul {
@@ -48,7 +48,7 @@ ul {
 li {
     display: inline-block;
     margin: 0 7% 0 0;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 button {
@@ -69,24 +69,18 @@ a:hover {
     color: blue;
 }
 
-iframe.discord {
-    margin-top: 20%;
-    display: flex;
-    justify-content: left;
-    margin-bottom: 0%;
-}
-
 .features img {
     border: 1px solid white;
     border-radius: 50%;
     box-shadow: gray 0 0 20px;
+    width: 300px;
+    height: 300px;
 }
 
 .features {
     color: white;
     padding: 2%;
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
     text-align: center;
 }
 
@@ -100,4 +94,44 @@ footer {
     bottom:0;
     width: 100%;
     z-index: 1;
+}
+
+
+.mobile {
+    display: none;
+    font-size: 28px;
+    transform: scale(0.5, 0.5);
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .features {
+        transform: scale(0.7, 0.7);
+    }
+
+    .discord {
+        transform: scale(0.6, 0.6);
+    }   
+
+    header .mobile {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header .desktop {
+        display: none;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.discord {
+    margin: 5%;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
