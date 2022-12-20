@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .title{
     font-size: 50px;
     text-align: center;
@@ -6,6 +10,7 @@
 .description {
     text-align: center;
     font-size: 25px;
+    margin-bottom: 200px;
 }
 
 body {
@@ -13,6 +18,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     color: white;
     font-family: Helvetica, Neue, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -34,8 +40,8 @@ header .logo a{
     display: inline-block;
     position: relative;
     background-size: 100%;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     text-indent: -999999999999999999999999999999px;
 }
 
@@ -52,12 +58,17 @@ li {
 }
 
 button {
-    background: rgb(42, 42, 42);
+    background: rgb(195, 195, 20);
     color: white;
     transform: scale(3, 3);
-    width: 80px;
     margin: 7%;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: gray 0 0 1px;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 0);
 }
 
 a {
@@ -77,11 +88,25 @@ a:hover {
     height: 300px;
 }
 
+
 .features {
     color: white;
     padding: 2%;
     display: inline-block;
     text-align: center;
+}
+
+.screenshots img{
+    border-radius: 40px;
+    width: 480px;
+    height: 270px;
+}
+
+.screenshots{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin: 2%;
 }
 
 footer {
@@ -91,7 +116,7 @@ footer {
     color: gray;
     margin-top: -50px;
     position: fixed;
-    bottom:0;
+    bottom: 0;
     width: 100%;
     z-index: 1;
 }
@@ -104,8 +129,12 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 715px) {
     .features {
+        transform: scale(0.7, 0.7);
+    }
+
+    .screenshots {
         transform: scale(0.7, 0.7);
     }
 
@@ -125,6 +154,10 @@ footer {
     .logo {
         width: 100px;
         height: 100px;
+    }
+
+    #flag {
+        transform: scale(0.15, 0.15);
     }
 }
 
