@@ -1,8 +1,10 @@
 html {
+
     scroll-behavior: smooth;
+
 }
 
-.title{
+.title {
     font-size: 50px;
     text-align: center;
 }
@@ -11,10 +13,12 @@ html {
     text-align: center;
     font-size: 25px;
     margin-bottom: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 body {
-    background-image: url("Images/E-Cafe.png");
+    background-image: url("Images/backround.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -24,25 +28,25 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 header {
-    background-image: url("Images/TopBarNight.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-color: rgb(32, 36, 59);
     background-position: top;
-    padding: 2%;
+    padding: 5px;
     text-align: center;
+    justify-content: left;
     top: 0px;
 }
 
-header .logo a{
-    background-image: url("Images/E-CafeIcon.png");
+header .logo a {
+    display: flex;
+    background-image: url("Images/logo.png");
     background-repeat: no-repeat;
-    display: inline-block;
-    position: relative;
     background-size: 100%;
     height: 100px;
     width: 100px;
-    text-indent: -999999999999999999999999999999px;
+    text-indent: -9999999999999999;
 }
 
 ul {
@@ -52,23 +56,30 @@ ul {
 }
 
 li {
-    display: inline-block;
-    margin: 0 7% 0 0;
+    display: flex;
+    margin: 10px 10px 0px 0px;
     font-size: 30px;
+    margin: 2%;
+    justify-content: center;
 }
 
 button {
-    background: rgb(195, 195, 20);
+    background: rgb(42, 50, 127);
     color: white;
-    transform: scale(3, 3);
+    transform: scale(4, 4);
     margin: 7%;
+    border: none;
+    border-radius: 5px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: gray 0 0 1px;
+    justify-content: center;
+    padding: 3px;
 }
 
 button:hover {
-    background-color: rgb(255, 255, 0);
+    background: rgb(146, 199, 249);
+    padding: 10px;
+    border-radius: 8px;
+    transition: 200ms;
 }
 
 a {
@@ -77,7 +88,10 @@ a {
 }
 
 a:hover {
-    color: blue;
+    border-radius: 15%;
+    background: rgb(82, 109, 160);
+    padding: 20px;
+    transition: 250ms;
 }
 
 .features img {
@@ -88,7 +102,6 @@ a:hover {
     height: 300px;
 }
 
-
 .features {
     color: white;
     padding: 2%;
@@ -96,51 +109,46 @@ a:hover {
     text-align: center;
 }
 
-.screenshots img{
+.screenshots img {
     border-radius: 40px;
     width: 480px;
     height: 270px;
+    transform: scale(2, 2);
 }
 
-.screenshots{
+.screenshots {
     color: white;
     display: inline-block;
     text-align: center;
     margin: 2%;
 }
 
-footer {
-    background-color: rgb(42, 42, 42);
-    text-align: center;
-    padding: 20px 20px;
-    color: gray;
-    margin-top: -50px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-
 .mobile {
     display: none;
-    font-size: 28px;
-    transform: scale(0.5, 0.5);
-    text-align: center;
+    text-align: left;
+    overflow-x: scroll;
 }
 
-@media screen and (max-width: 715px) {
+.mobile a .logo {
+    width: 50px;
+    height: 50px;
+}
+
+.mobile li {
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1100px) {
     .features {
-        transform: scale(0.7, 0.7);
+        display: inline-grid;
+        transform: scale(1.8, 1.8);
+        margin: 18%;
+        justify-content: center;
     }
 
     .screenshots {
-        transform: scale(0.7, 0.7);
+        flex-direction: column;
     }
-
-    .discord {
-        transform: scale(0.6, 0.6);
-    }   
 
     header .mobile {
         display: flex;
@@ -151,20 +159,18 @@ footer {
         display: none;
     }
 
-    .logo {
-        width: 100px;
-        height: 100px;
+    .screenshots img {
+        transform: scale(1.5, 1.5);
     }
 
-    #flag {
-        transform: scale(0.15, 0.15);
-    }
+    body {
+        background-image: url("Images/backgroundVertical.png");
+        background-attachment: scroll;
+   }
+   
 }
 
-.discord {
-    margin: 5%;
-    position: relative;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+.underline {
+    text-decoration: underline;
+    color: white;
 }

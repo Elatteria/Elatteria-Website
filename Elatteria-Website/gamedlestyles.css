@@ -3,13 +3,6 @@ body {
     background-image: none;
 }
 
-#underline {
-    height: 3px;
-    background-color: white;
-    transform: scale(0.1, 1);
-    margin-top: 2px;
-}
-
 
 .gamedle-section {
     background: rgba(66, 62, 62, 0.5);
@@ -63,21 +56,17 @@ button:hover {
     background-color: rgb(90, 83, 83);
 }
 
-@media screen and (max-width: 715px) {
+@media screen and (max-width: 1100px) {
     #flag {
         transform: scale(0.8, 0.8);
     }
 
     .gamedle-section {
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 
     input {
-        width: 200px;
-    }
-
-    #underline {
-        transform: scale(0.3, 1);
+        width: 300px;
     }
 }
