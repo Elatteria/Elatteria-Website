@@ -91,10 +91,12 @@ a {
 }
 
 a:hover {
-    border-radius: 15%;
-    /*background: rgb(82, 109, 160);*/
-    padding: 2.5%;
-    transition: 250ms;
+    font: roboto;
+    font-family: "Roboto";
+}
+
+a img:hover {
+    border: 2px solid white;
 }
 
 .features img {
