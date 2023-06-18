@@ -21,6 +21,21 @@ html {
     margin-top: 500px;
 }
 
+.middle {
+    transition: 100ms ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
 body {
     background-image: url("Images/backround.png");
     background-repeat: no-repeat;
@@ -35,11 +50,14 @@ body {
 
 
 header {
-    background-color: #60a37c;
-    background-position: top;
+    margin: 0 auto;
+    background-color: #4fa57a;
+    background-position: top;   
     text-align: center;
-    top: 0px;
     height: 80px;
+    width: 99%;
+    margin-top: 0.5%;
+    border-radius: 30px;
 }
 
 header .logo a {
@@ -66,8 +84,12 @@ li {
     float: left;
 }
 
+.active {
+    font-weight: 700;
+}
+
 button {
-    background: rgb(42, 50, 127);
+    background: #4fa57a;
     color: white;
     transform: scale(4, 4);
     margin: 7%;
@@ -90,13 +112,30 @@ a {
     color: white;
 }
 
+.link {
+    color: lightskyblue;
+}
+
 a:hover {
-    font: roboto;
-    font-family: "Roboto";
+    font-weight: 700;
 }
 
 a img:hover {
-    border: 2px solid white;
+    border: 3px solid white;
+}
+
+img {
+    border-radius: 10px;
+    border: 1px solid white;
+    backface-visibility: hidden;
+}
+
+.copyable:hover {
+    opacity: 0.85;
+}
+
+.container:hover .middle {
+    opacity: 1;
 }
 
 .features img {
@@ -130,12 +169,14 @@ a img:hover {
 
 .mobile {
     display: none;
-    text-align: left;
+    text-align: center;
     overflow-x: scroll;
 }
 
 .mobile li {
     font-size: 30px;
+    top: 50%;
+    bottom: 50%;
 }
 
 @media screen and (max-width: 1100px) {
@@ -152,6 +193,13 @@ a img:hover {
 
     header .mobile {
         display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header .mobile .logo a {
+        width: 225px;
+        height: 75px;
     }
 
     header .desktop {
