@@ -101,14 +101,6 @@ li button {
     width: 70px;
 }
 
-li button:hover {
-    padding: 0;
-}
-
-.right {
-    float: right;
-}
-
 .active {
     font-weight: 700;
 }
