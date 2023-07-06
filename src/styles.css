@@ -212,6 +212,10 @@ img {
         flex-direction: column;
     }
 
+    .description {
+        font-size: 40px;
+    }
+
     header .mobile {
         display: flex;
         flex-direction: row;
